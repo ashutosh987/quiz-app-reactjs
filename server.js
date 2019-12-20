@@ -1,0 +1,24 @@
+const express = require("express");
+mongoose = require("mongoose");
+const app = express();
+const { check, validationResult } = require("express-validator/check");
+//Init Middleware
+app.use(express.json({ extended: false }));
+
+//define routes
+app.use("/api/users", require("./routes/api/users"));
+app.use("/api/auth", require("./routes/api/auth"));
+app.use("/api/profile", require("./routes/api/profile"));
+app.use("/api/posts", require("./routes/api/posts"));
+
+var server = app.listen(5000, listening);
+app.get("/", (req, res) => res.send("api running"));
+
+function listening() {
+  console.log("server is running");
+}
+mongoose.connect("mongodb://localhost:27017/reactt", {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useCreateIndex: true
+});

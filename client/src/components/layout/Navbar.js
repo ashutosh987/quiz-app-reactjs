@@ -34,7 +34,7 @@ export const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className='navbar bg-dark'>
       <h1>
         <Link to='/'>
-          <i className='fas fa-code'></i> DevConnector
+          <i className='fas fa-code'></i> Quiz Game
         </Link>
       </h1>
 
