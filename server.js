@@ -17,7 +17,9 @@ app.get("/", (req, res) => res.send("api running"));
 function listening() {
   console.log("server is running");
 }
-mongoose.connect("mongodb://localhost:27017/reactt", {
+var mongoURI =
+  "mongodb+srv://ashutosh:ashu@cluster0-qp4ft.mongodb.net/test?retryWrites=true&w=majority";
+mongoose.connect(mongoURI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
   useCreateIndex: true
