@@ -1,4 +1,4 @@
-# Techass-Time
+# Quiz-app
 <br/>
 download packages for both server and client <br/>
 run app using command<br/>
