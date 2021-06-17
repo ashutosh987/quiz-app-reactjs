@@ -2,7 +2,10 @@
 
 * {
   font-family: "Raleway", sans-serif;
+
 }
+
+
 
 .container {
   position: absolute;
@@ -47,7 +50,7 @@
 .answerBtn {
   position: relative;
   padding: 10px;
-  background-color: rgb(250, 151, 37);
+  background-color: rgb(37, 165, 250);
   display: inline-block;
   margin: 10px;
   outline: none;
@@ -58,17 +61,30 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
+.answerBtn1 {
+  position: relative;
+  padding: 10px;
+  background-color: green;
+  display: inline-block;
+  margin: 10px;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
 .score-board {
   position: relative;
   height: 700px;
 }
 
 .score {
-  position: absolute;
+  background-color: rgb(149, 179, 224);
   width: 1024px;
   font-size: 3em;
-  top: 250px;
+  top: 50px;
   text-align: center;
 }
 
