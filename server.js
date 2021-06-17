@@ -11,7 +11,7 @@ app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
 app.use("/api/posts", require("./routes/api/posts"));
 
-var server = app.listen(5000, listening);
+var server = app.listen(process.env.PORT || 5000, listening);
 app.get("/", (req, res) => res.send("api running"));
 
 function listening() {
@@ -22,5 +22,5 @@ var mongoURI =
 mongoose.connect(mongoURI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
-  useCreateIndex: true
+  useCreateIndex: true,
 });
